@@ -2,8 +2,10 @@ body{
     background: linear-gradient(to right, #2C4550, #0C0C0C);
     display: grid;
     grid-template-columns: 6% 94%;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* LEFT MAIN DIV */
@@ -17,7 +19,7 @@ body{
 #site-name{
     font-size: 50px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     margin-top: 40px;
 }
 
@@ -42,22 +44,21 @@ body{
 /* RIGHT MAIN DIV */
 
 ul{
-    display: inline-flex;
+    display: flex;
+    list-style-type: none;
     float: right;
     margin-right: 10%;
 }
 
-li{
-    list-style-type: none;
+ul li{
+    display: flex;
     padding: 20px;
-    font-size: 20px;
-    font-weight: bolder;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-li:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
+ul li a{
+    text-decoration: none;
+    color: white;                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 .active{
@@ -96,11 +97,12 @@ li:hover{
 }
 
 .exploration_footprint{
-    position: relative;
-    top: 20%;
+    position:relative;
+    margin-top: 8%;
+    width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    background: radial-gradient(100% 2631.09% at 0% 0%, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.558) 100%);
+    background: radial-gradient(100% 2631.09% at 0% 0%, rgba(0, 0, 0, 0.558) 100%, rgba(0, 0, 0, 0.42) 0%);
     backdrop-filter: blur(25px);
     z-index: 2;
 }
@@ -114,4 +116,18 @@ li:hover{
     justify-content: center;
     flex-direction: column;
 }
-    
+
+/* FLOATING ANIMATION */
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }   
+}
