@@ -1,0 +1,102 @@
+body{
+    background: linear-gradient(to right, #2C4550, #0C0C0C);
+    display: grid;
+    grid-template-columns: 6% 94%;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: white;
+}
+
+/* LEFT MAIN DIV */
+
+.name-socials{
+    border-right: 1px solid white;
+    height:100vh;
+    position: relative;
+}
+
+#site-name{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+.socials{
+    display: grid;
+    position: absolute;
+    bottom: 30px;
+    justify-items: center;
+    left: 30%;
+}
+
+#socials-icons{
+    padding: 20px;
+}
+
+/* RIGHT MAIN DIV */
+
+ul{
+    display: inline-flex;
+    float: right;
+    margin-right: 10%;
+}
+
+li{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.main-content-wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+
+.text-div{
+    position: relative;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.image-div{
+    position: relative;
+    z-index: 1;
+}
+
+#stairs{
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 20%;
+    z-index: 1;
+}
+
+#puppet{
+    position: absolute;
+    z-index: 2;
+    margin-top: 25%;
+    margin-left: 60%;
+}
+
+.exploration_footprint{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background: radial-gradient(100% 2631.09% at 0% 0%, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.558) 100%);
+    backdrop-filter: blur(25px);
+    z-index: 2;
+}
+
+.astronaut{
+    text-align: center;
+}
+
+.exploration, .footprint{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    
