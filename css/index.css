@@ -5,7 +5,7 @@ body{
     font-family: "Poppins", sans-serif;
     color: white;
     margin: 0 auto;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 /* LEFT MAIN DIV */
@@ -54,11 +54,17 @@ ul li{
     display: flex;
     padding: 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 ul li a{
     text-decoration: none;
     color: white;                                                                                                                                                                                                                                                                                                                                                                            
+}
+
+.nav-items:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .active{
@@ -82,22 +88,14 @@ ul li a{
     z-index: 1;
 }
 
-#stairs{
+#puppet_stairs{
     position: absolute;
-    margin-top: 22%;
-    margin-left: 20%;
-    z-index: 1;
-}
-
-#puppet{
-    position: absolute;
-    z-index: 2;
-    margin-top: 25%;
-    margin-left: 70%;
+    margin-top: 20%;
+    transform: scale(1.2);
 }
 
 .exploration_footprint{
-    position:relative;
+    position: relative;
     margin-top: 8%;
     width: 100%;
     display: grid;
@@ -130,4 +128,35 @@ ul li a{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 20px); }
     100%   { transform: translate(0, -0px); }   
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1950px){
+    #puppet_stairs{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1250px){
+    #puppet_stairs{
+        transform: scale(0.8);
+    }
+
+    .main-content-wrapper{
+        grid-template-columns: 100%;
+    }
+
+    .image-div{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .text-div{
+        z-index: 2;
+    }
+
+    .main-content{
+        display: block;
+    }
 }
