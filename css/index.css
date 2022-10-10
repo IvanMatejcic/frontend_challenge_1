@@ -17,7 +17,7 @@ body{
 }
 
 #site-name{
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
     font-weight: bold;
     margin-top: 40px;
@@ -133,30 +133,43 @@ ul li a{
 /* RESPONSIVENESS */
 
 @media screen and (max-width: 1950px){
-    #puppet_stairs{
-        transform: scale(0.9);
+
+}
+
+@media screen and (max-width: 1650px){
+    .exploration_footprint{
+        grid-template-columns: 100%;
+    }
+
+    .exploration, .footprint{
+        align-items: center;
     }
 }
 
+
 @media screen and (max-width: 1250px){
-    #puppet_stairs{
-        transform: scale(0.8);
-    }
 
     .main-content-wrapper{
+        position: relative;
         grid-template-columns: 100%;
     }
 
     .image-div{
         position: absolute;
-        z-index: 1;
+        grid-area: 1/1;
     }
 
     .text-div{
-        z-index: 2;
+        z-index: 10;
+        top: 0;
+        left: 0;
     }
 
     .main-content{
         display: block;
     }
+}
+
+@media screen and (max-width: 900px){
+
 }
