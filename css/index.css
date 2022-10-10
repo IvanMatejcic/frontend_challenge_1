@@ -98,7 +98,7 @@ ul li a{
 
 .exploration_footprint{
     position: relative;
-    margin-top: 12%;
+    margin-top: 13%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     background: radial-gradient(100% 2631.09% at 0% 0%, rgba(0, 0, 0, 0.558) 100%, rgba(0, 0, 0, 0.42) 0%);
@@ -148,9 +148,6 @@ h1{
 }
 
 @media screen and (max-width: 1650px){
-    .exploration_footprint{
-        grid-template-columns: 100%;
-    }
 
     .exploration, .footprint{
         align-items: center;
@@ -192,6 +189,10 @@ h1{
     body{
         grid-template-columns: 100%;
     }
+
+    .exploration_footprint{
+        grid-template-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -219,14 +220,26 @@ h1{
   }
 
   .exploration_footprint{
+    margin-top: 70%;
+  }
+
+  .main-content-wrapper{
     margin-top: 30%;
   }
 
+  .text-div{
+    margin-left: 0%;
+  }
+
   h1{
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .text-div{
     margin-top: 30px;
+  }
+
+  .footprint{
+    padding: 0px 0px 60px 0px;
   }
 }
