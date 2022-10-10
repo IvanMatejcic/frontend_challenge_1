@@ -12,7 +12,7 @@ body{
 
 .name-socials{
     border-right: 1px solid white;
-    height:100vh;
+    height: auto;
     position: relative;
 }
 
@@ -25,18 +25,19 @@ body{
 
 .socials{
     display: grid;
-    position: absolute;
-    bottom: 30px;
     justify-items: center;
-    left: 30%;
 }
 
 .socials-icons{
     padding: 20px;
-    transition: transform .2s;
+    height: auto;
 }
 
-.social-icons:hover{
+.social-links{
+    transition: 0.3s;
+}
+
+.social-links:hover{
     transform: scale(1.2);
     transition: 0.3s;
 }
@@ -63,12 +64,16 @@ ul li a{
 }
 
 .nav-items:hover{
-    transform: scale(1.1);
     transition: 0.3s;
+    text-decoration: underline;
+    text-underline-offset: -20px;
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
 
 .active{
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .main-content-wrapper{
@@ -115,6 +120,11 @@ ul li a{
     flex-direction: column;
 }
 
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
 /* FLOATING ANIMATION */
 
 .floating { 
@@ -122,6 +132,11 @@ ul li a{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.description-main, .description{
+    font-size: 20px;
+    line-height: 30px;
 }
 
 @keyframes floating {
@@ -150,26 +165,72 @@ ul li a{
 @media screen and (max-width: 1250px){
 
     .main-content-wrapper{
-        position: relative;
         grid-template-columns: 100%;
     }
 
     .image-div{
-        position: absolute;
         grid-area: 1/1;
+        z-index: 1;
+        transform: scale(0.8);
     }
 
     .text-div{
         z-index: 10;
         top: 0;
         left: 0;
+        grid-area: 1/1;
     }
 
     .main-content{
         display: block;
     }
+
+    .description-main{
+        width: 90vw;
+    }
+
+    .name-socials{
+        display: none;
+    }
+
+    body{
+        grid-template-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 900px){
+    .image-div{
+        transform: scale(0.5);
+    }
+}
 
+@media screen and (max-width: 768px){
+  #puppet-stairs{
+    background-size: cover;
+  }
+
+  .description-main, .description{
+    font-size: 15px;
+    margin: 0px 10px 0px 10px;
+  }
+
+  h1{
+    margin: 80px 10px 30px 10px;
+  }
+
+  .astronaut-image{
+    transform: scale(0.7);
+  }
+
+  .exploration_footprint{
+    margin-top: 30%;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  .text-div{
+    margin-top: 30px;
+  }
 }
