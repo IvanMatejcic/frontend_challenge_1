@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
         <link rel="stylesheet" href = "css/index.css">
         <script src = "js/index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
     </head>
 
     <body>
@@ -21,12 +23,15 @@
         </div>
         <div class = "main-content">
             <nav>
-                <ul>
+                <ul id = "navbar-list">
                     <li class = "nav-items"><a href = "https://trollface.dk/" class = "active">Home</a></li>
                     <li class = "nav-items"><a href = "https://trollface.dk/">About</a></li>              
                     <li class = "nav-items"><a href = "https://trollface.dk/">Contact</a></li>
                     <li class = "nav-items"><a href = "https://trollface.dk/">Gallery</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i href="javascript:void(0);" onclick="myFunction2()" class = "fa fa-bars"></i>
+                </a>
             </nav>
             <div class = "main-content-wrapper">
                 <div class = "floating text-div">
