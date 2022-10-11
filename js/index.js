@@ -7,14 +7,3 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-
-function myFunction2(){
-    var y = document.getElementByClass("fa-bars")
-
-  if(y.style.display === "none"){
-    x.style.display = "block";
-  }
-  else{
-    x.style.display = "none";
-  }
-}
