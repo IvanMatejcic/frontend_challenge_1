@@ -1,5 +1,5 @@
 ## This is an attempt at my first frontend challenge.  
-The challenge is creating a landing page with working links, responsiveness,a hovering animation and working navigation (desktop & mobile).  
+The challenge is creating clean & modern landing page with working links, responsiveness, a hovering animation and working navigation (desktop & mobile).  
 
 🎯 Target : User can see the similar design ✅  
 🎯 Target : Responsive design ✅  
